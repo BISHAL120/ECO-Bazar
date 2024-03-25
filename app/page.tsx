@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <div className="hidden md:flex w-full md:mt-1 py-2 border-[gray]/40 md:border-t border-b ">
-        <div className="w-full max-w-[1200p] xl:max-w-[1450px] mx-auto px-5 md:px-10 flex items-center justify-between">
+        <div className="wrapper flex items-center justify-between">
           <div className="flex items-start flex-col md:flex-row gap-2 text-[12px] font-normal leading-5 h-[20px] md:h-[30px] cursor-pointer">
             <div className="md:flex items-center gap-2">
               <Image
