@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import MapIcon from "@/public/assets/svg/Map Pin.svg";
+import { FaSearch } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div>
+      {/* Top Stripe Start Fro Here */}
       <div className="hidden md:flex w-full md:mt-1 py-2 border-[gray]/40 md:border-t border-b ">
         <div className="wrapper flex items-center justify-between">
           <div className="flex items-start flex-col md:flex-row gap-2 text-[12px] font-normal leading-5 h-[20px] md:h-[30px] cursor-pointer">
@@ -29,6 +31,69 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Top Stripe Ends Here */}
+      {/* Logo and Search Start From Here  */}
+      <div>
+        <div className="wrapper py-2 md:py-5">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-3 ">
+              <Image
+                src="/assets/svg/plant 1.svg"
+                alt=""
+                width={40}
+                height={40}
+                className="w-7 md:w-[40px]"
+              />
+              <p className="md:text-4xl text-xl font-medium">Ecobazar</p>
+            </div>
+            <div className="hidden md:flex ">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="py-[17px] pl-12 pr-[18px] w-[400px] border-r-0 border-t border-b border-l rounded-e-none border-gray-300 rounded-lg focus:outline-none "
+                />
+                <FaSearch
+                  size={19}
+                  className="absolute top-[8px] left-[6px] mt-3 ml-3 text-gray-500"
+                />
+              </div>
+              <button className="bg-[#00B207] text-white px-[24px] py-[12px] border0 rounded-s-none rounded-e-md ">
+                Search
+              </button>
+            </div>
+            <div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/assets/svg/Heart.svg"
+                  alt="Wish-List"
+                  width={32}
+                  height={32}
+                  className="md:w-[32px] w-6"
+                />
+                <div className="h-[20px] md:h-7 w-[1px] bg-black/45"></div>
+                <div className="relative">
+                  <Image
+                    src="/assets/svg/Bag.svg"
+                    alt="Cart"
+                    width={32}
+                    height={32}
+                    className="md:w-[32px] w-6"
+                  />
+                  <span className=" flex justify-center items-center absolute top-[-5px] right-[-8px] md:right-[-3px] w-[18px] h-[18px] text-[10px] rounded-full bg-[#2C742F] text-white">
+                    5
+                  </span>
+                </div>
+                <div className="text-sm">
+                  <p className="hidden md:block ">Shopping cart:</p>
+                  <p>$57.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Logo and Search End Here */}
     </div>
   );
 }
