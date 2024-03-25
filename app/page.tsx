@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex items-start flex-col md:flex-row gap-2 text-[12px] font-normal leading-5 h-[20px] md:h-[30px] cursor-pointer">
             <div className="md:flex items-center gap-2">
               <Image
-                src="/assets/svg/map pin.svg"
+                src="../public/assets/svg/map pin.svg"
                 width={17}
                 height={20}
                 alt="Location Svg"
