@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import MapIcon from "@/public/assets/svg/Map Pin.svg";
 import { FaSearch } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa6";
+import { menus } from "@/Constant";
+import MobileNavbar from "@/components/Shared/MobileNavbar";
+import { Navbar } from "@/components/Shared/Navbar";
 
 export default function Home() {
   return (
@@ -94,6 +98,53 @@ export default function Home() {
         </div>
       </div>
       {/* Logo and Search End Here */}
+      {/* Navbar Start From Here */}
+      <div className="bg-[#333333] text-white h-[60px]">
+        <div className="hidden md:wrapper w-full h-full md:flex items-center justify-between">
+          {/* <div className=" md:flex gap-5 h-full items-center">
+            {menus.map((item, i) => {
+              return (
+                <>
+                  {item?.icon ? (
+                    <div
+                      key={i}
+                      className="text-[#999999] hover:text-[#ffffff] flex items-center gap-3 cursor-pointer"
+                    >
+                      {item.name}
+                      {item?.icon && <FaAngleDown />}
+                    </div>
+                  ) : (
+                    <Link
+                      key={i}
+                      href={item.href}
+                      className="text-[#999999] hover:text-[#ffffff] flex items-center gap-3 cursor-pointer"
+                    >
+                      {item.name}
+                      {item?.icon && <FaAngleDown />}
+                    </Link>
+                  )}
+                </>
+              );
+            })}
+          </div> */}
+          <Navbar />
+          <Link
+            href={`tel: +8801623939834`}
+            className="text-[#fff] flex items-center gap-2"
+          >
+            <Image
+              src="/assets/svg/PhoneCall1.svg"
+              alt="Phone icon"
+              width={28}
+              height={28}
+              className="md:w-[28px] w-6"
+            />
+            <div>+880 1623939834</div>
+          </Link>
+        </div>
+        <MobileNavbar />
+      </div>
+      {/* Navbar End Here */}
     </div>
   );
 }
