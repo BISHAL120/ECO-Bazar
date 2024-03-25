@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MapIcon from "@/public/assets/svg/Map Pin.svg";
 
 export default function Home() {
   return (
@@ -8,12 +9,7 @@ export default function Home() {
         <div className="wrapper flex items-center justify-between">
           <div className="flex items-start flex-col md:flex-row gap-2 text-[12px] font-normal leading-5 h-[20px] md:h-[30px] cursor-pointer">
             <div className="md:flex items-center gap-2">
-              <Image
-                src="/assets/svg/map pin.svg"
-                width={17}
-                height={20}
-                alt="Location Svg"
-              />
+              <Image src={MapIcon} width={17} height={20} alt="Location Svg" />
               <Link
                 target="_blank"
                 href="https://maps.app.goo.gl/t7yWHDXfKEfwN2c3A"
