@@ -6,6 +6,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { menus } from "@/Constant";
 import MobileNavbar from "@/components/Shared/MobileNavbar";
 import { Navbar } from "@/components/Shared/Navbar";
+import HeroSlider from "@/components/Shared/HeroSlider";
 
 export default function Home() {
   return (
@@ -71,24 +72,24 @@ export default function Home() {
                 <Image
                   src="/assets/svg/Heart.svg"
                   alt="Wish-List"
-                  width={32}
-                  height={32}
-                  className="md:w-[32px] w-6"
+                  width={30}
+                  height={30}
+                  className="cursor-pointer"
                 />
                 <div className="h-[20px] md:h-7 w-[1px] bg-black/45"></div>
-                <div className="relative">
+                <div className="relative cursor-pointer">
                   <Image
                     src="/assets/svg/Bag.svg"
                     alt="Cart"
-                    width={32}
-                    height={32}
-                    className="md:w-[32px] w-6"
+                    width={30}
+                    height={30}
+                    className=""
                   />
                   <span className=" flex justify-center items-center absolute top-[-5px] right-[-8px] md:right-[-3px] w-[18px] h-[18px] text-[10px] rounded-full bg-[#2C742F] text-white">
                     5
                   </span>
                 </div>
-                <div className="text-sm">
+                <div className="text-sm cursor-pointer">
                   <p className="hidden md:block ">Shopping cart:</p>
                   <p>$57.00</p>
                 </div>
@@ -101,32 +102,6 @@ export default function Home() {
       {/* Navbar Start From Here */}
       <div className="bg-[#333333] text-white h-[60px]">
         <div className="hidden md:wrapper w-full h-full md:flex items-center justify-between">
-          {/* <div className=" md:flex gap-5 h-full items-center">
-            {menus.map((item, i) => {
-              return (
-                <>
-                  {item?.icon ? (
-                    <div
-                      key={i}
-                      className="text-[#999999] hover:text-[#ffffff] flex items-center gap-3 cursor-pointer"
-                    >
-                      {item.name}
-                      {item?.icon && <FaAngleDown />}
-                    </div>
-                  ) : (
-                    <Link
-                      key={i}
-                      href={item.href}
-                      className="text-[#999999] hover:text-[#ffffff] flex items-center gap-3 cursor-pointer"
-                    >
-                      {item.name}
-                      {item?.icon && <FaAngleDown />}
-                    </Link>
-                  )}
-                </>
-              );
-            })}
-          </div> */}
           <Navbar />
           <Link
             href={`tel: +8801623939834`}
@@ -145,6 +120,9 @@ export default function Home() {
         <MobileNavbar />
       </div>
       {/* Navbar End Here */}
+      {/* Slider Start From Here */}
+      <HeroSlider />
+      {/* Slider End Here */}
     </div>
   );
 }
