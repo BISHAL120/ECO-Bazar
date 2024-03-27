@@ -7,10 +7,12 @@ import { menus } from "@/Constant";
 import MobileNavbar from "@/components/Shared/MobileNavbar";
 import { Navbar } from "@/components/Shared/Navbar";
 import HeroSlider from "@/components/Shared/HeroSlider";
+import CursorFollower from "@/components/Shared/Mouse Effect/CursorFollower";
 
 export default function Home() {
   return (
     <div>
+      <CursorFollower />
       {/* Top Stripe Start Fro Here */}
       <div className="hidden md:flex w-full md:mt-1 py-2 border-[gray]/40 md:border-t border-b ">
         <div className="wrapper flex items-center justify-between">
