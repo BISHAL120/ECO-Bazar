@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 
 const HeroSlider = () => {
   return (
-    <div className="wrapper mt-6">
+    <div className="md:wrapper mt-6">
       <div className="m-4 flex flex-col md:flex-row gap-[24px]">
         <div className="">
           <Carousel
@@ -143,8 +143,8 @@ const HeroSlider = () => {
             </CarouselContent>
           </Carousel>
         </div>
-        <div className="w-[30%] flex flex-shrink-0 flex-col justify-between">
-          <div className=" h-[287px] relative">
+        <div className="md:w-[30%] w-[100%] flex flex-shrink-0 gap-3 md:gap-0 flex-col justify-between">
+          <div className=" h-[290px] relative">
             <Image
               src="/assets/Images/BG.png"
               alt="Slider mini 1"
@@ -170,7 +170,7 @@ const HeroSlider = () => {
               </Button>
             </div>
           </div>
-          <div className=" h-[287px] relative">
+          <div className=" h-[290px] relative">
             <Image
               src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Slider mini 2"

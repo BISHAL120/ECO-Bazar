@@ -54,10 +54,13 @@ const MobileNavbar = () => {
                           <FaAngleDown />
                         </div>
                         {subMenu === index && (
-                          <div className="text-white/60 flex flex-col gap-3 justify-start p-4">
+                          <div
+                            key={index}
+                            className="text-white/60 flex flex-col gap-3 justify-start p-4"
+                          >
                             {item.subMenus.map((subMenus, i) => {
                               return (
-                                <Link href={subMenus.href} key={subMenus.name}>
+                                <Link key={subMenus.name} href={subMenus.href}>
                                   {subMenus.name}
                                 </Link>
                               );
