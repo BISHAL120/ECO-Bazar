@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       {/* Top Stripe Start Fro Here */}
-      <div className="hidden md:flex w-full md:mt-1 py-2 border-[gray]/40 md:border-t border-b ">
+      <div className="hidden md:flex w-full md:mt-2 py-2 border-[gray]/40  border-b ">
         <div className="wrapper flex items-center justify-between">
           <div className="flex items-start flex-col md:flex-row gap-2 text-[12px] font-normal leading-5 h-[20px] md:h-[30px] cursor-pointer">
             <div className="md:flex items-center gap-2">
@@ -23,7 +23,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex items-center text-[12px] font-normal leading-2">
+          <div className="flex items-center mb-1 text-[12px] font-normal leading-2">
             <Link className="cursor-pointer" href="/signin">
               Sign In
             </Link>
@@ -49,7 +49,7 @@ export default function Home() {
               />
               <p className="md:text-4xl text-xl font-medium">Ecobazar</p>
             </div>
-            {/* <div className="hidden md:flex ">
+            <div className="hidden lg:flex  ">
               <div className="relative">
                 <input
                   type="text"
@@ -67,7 +67,7 @@ export default function Home() {
               <button className="bg-[#00B207] text-white px-[24px] py-[12px] border0 rounded-s-none rounded-e-md ">
                 Search
               </button>
-            </div> */}
+            </div>
             <div>
               <div className="flex items-center gap-4">
                 <Image
