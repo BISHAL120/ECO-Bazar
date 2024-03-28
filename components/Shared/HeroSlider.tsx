@@ -142,8 +142,8 @@ const HeroSlider = () => {
             </CarouselContent>
           </Carousel>
         </div>
-        <div className=" w-[100%] xl:w-[30%] flex flex-col md:flex-row xl:flex-col flex-shrink-0 gap-3 justify-around">
-          <div className=" h-[290px] relative">
+        <div className=" w-[100%] xl:w-[30%] flex flex-col md:flex-row xl:flex-col flex-shrink-0 gap-3 justify-around xl:justify-between">
+          <div className=" h-[290px] xl:h-[305px] relative">
             <Image
               src="/assets/Images/BG.png"
               alt="Slider mini 1"
@@ -175,7 +175,7 @@ const HeroSlider = () => {
               </Button>
             </div>
           </div>
-          <div className=" h-[290px] relative">
+          <div className=" h-[290px] xl:h-[305px] relative">
             <Image
               src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Slider mini 2"
