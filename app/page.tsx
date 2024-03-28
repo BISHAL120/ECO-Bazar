@@ -126,7 +126,6 @@ export default function Home() {
       {/* Categories Here */}
       <Categories />
       {/* Products Here */}
-      <Products />
     </div>
   );
 }
