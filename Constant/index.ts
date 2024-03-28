@@ -134,3 +134,80 @@ export const Categories: {
     image: "/assets/Images/Oil.png",
   },
 ];
+
+export const Products = [
+  {
+    id: 1,
+    name: "Green Apple",
+    price: 20.99,
+    discountPrice: 14.99,
+    sale: 50,
+    image: "/assets/Images/Products/Image.png",
+  },
+  {
+    id: 2,
+    name: "Fresh Indian Malta",
+    price: 20.0,
+    image: "/assets/Images/Products/Image (1).png",
+  },
+  {
+    id: 3,
+    name: "Chinese cabbage",
+    price: 12.0,
+    image: "/assets/Images/Products/Image (2).png",
+  },
+  {
+    id: 4,
+    name: "Green Lettuce",
+    price: 9.0,
+    image: "/assets/Images/Products/Image (3).png",
+  },
+  {
+    id: 5,
+    name: "Eggplant",
+    price: 34.0,
+    image: "/assets/Images/Products/Image (4).png",
+  },
+  {
+    id: 6,
+    name: "Big Potatoes",
+    price: 20.0,
+    image: "/assets/Images/Products/Image (5).png",
+  },
+  {
+    id: 7,
+    name: "Corn",
+    price: 20.0,
+    image: "/assets/Images/Products/Image (6).png",
+  },
+  {
+    id: 8,
+    name: "Fresh Cauliflower",
+    price: 12.0,
+    image: "/assets/Images/Products/Image (7).png",
+  },
+  {
+    id: 9,
+    name: "Green Capsicum",
+    price: 9.0,
+    image: "/assets/Images/Products/Image (8).png",
+  },
+  {
+    id: 10,
+    name: "Big Potatoes",
+    price: 20.0,
+    image: "/assets/Images/Products/Image (5).png",
+  },
+  {
+    id: 11,
+    name: "Chinese cabbage",
+    price: 12.0,
+    image: "/assets/Images/Products/Image (2).png",
+  },
+  {
+    id: 12,
+    name: "Green Lettuce",
+    price: 9.0,
+    image: "/assets/Images/Products/Image (3).png",
+  },
+];
