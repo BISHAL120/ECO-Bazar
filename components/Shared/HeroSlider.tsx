@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 const HeroSlider = () => {
   return (
     <div className="md:wrapper mt-6">
-      <div className="m-4 flex flex-col md:flex-row gap-[24px]">
+      <div className="m-4 md:m-0 flex flex-col xl:flex-row gap-[24px]">
         <div className="">
           <Carousel
             plugins={[
@@ -36,7 +36,7 @@ const HeroSlider = () => {
                   height={650}
                   className=" rounded-lg overflow-hidden"
                 />
-                <div className="md:w-[90%] w-[100%] pt-20 md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-14 bg-gradient-to-b from-[#222831]/70 md:to-white/50 rounded-lg p-5 ">
+                <div className="md:w-[90%] w-[100%] pt-20 md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-b from-[#222831]/70 md:to-white/50 rounded-lg p-5 ">
                   <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
                     Fresh & Healthy Organic Food
                   </h2>
@@ -142,7 +142,7 @@ const HeroSlider = () => {
             </CarouselContent>
           </Carousel>
         </div>
-        <div className="md:w-[30%] w-[100%] flex flex-shrink-0 gap-3 md:gap-0 flex-col justify-between">
+        <div className=" w-[100%] xl:w-[30%] flex flex-col md:flex-row xl:flex-col flex-shrink-0 gap-3 justify-around">
           <div className=" h-[290px] relative">
             <Image
               src="/assets/Images/BG.png"
@@ -187,7 +187,7 @@ const HeroSlider = () => {
               <p className="text-sm font-medium uppercase text-[#FFFFFF] mb-3">
                 Best Deal
               </p>
-              <p className="w-[343px] font-semibold text-[32px] text-[#FFFFFF] mb-8">
+              <p className="w-[330px] font-semibold text-[30px] text-[#FFFFFF] mb-6">
                 Special Products Deal of the Month
               </p>
               <Button

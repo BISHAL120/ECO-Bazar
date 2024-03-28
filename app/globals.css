@@ -74,7 +74,7 @@
     @apply bg-background text-foreground;
   }
   .wrapper {
-    @apply w-full max-w-[100%] xl:max-w-[1450px] mx-auto px-5 md:px-10;
+    @apply w-full max-w-[100%] xl:max-w-[1450px] mx-auto px-5;
   }
 }
 

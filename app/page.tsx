@@ -49,7 +49,7 @@ export default function Home() {
               />
               <p className="md:text-4xl text-xl font-medium">Ecobazar</p>
             </div>
-            <div className="hidden md:flex ">
+            {/* <div className="hidden md:flex ">
               <div className="relative">
                 <input
                   type="text"
@@ -67,7 +67,7 @@ export default function Home() {
               <button className="bg-[#00B207] text-white px-[24px] py-[12px] border0 rounded-s-none rounded-e-md ">
                 Search
               </button>
-            </div>
+            </div> */}
             <div>
               <div className="flex items-center gap-4">
                 <Image
