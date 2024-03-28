@@ -5,6 +5,7 @@ import MobileNavbar from "@/components/Shared/MobileNavbar";
 import { Navbar } from "@/components/Shared/Navbar";
 import HeroSlider from "@/components/Shared/HeroSlider";
 import Categories from "@/components/Shared/Categories";
+import Products from "@/components/Shared/Products";
 
 export default function Home() {
   return (
@@ -126,6 +127,7 @@ export default function Home() {
       {/* Categories Here */}
       <Categories />
       {/* Products Here */}
+      <Products />
     </div>
   );
 }
