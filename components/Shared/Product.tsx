@@ -15,8 +15,8 @@ const Product = ({
   image: string;
   name: string;
   price: number;
-  discountPrice: number;
-  sale: number;
+  discountPrice?: number;
+  sale?: number;
 }) => {
   const [hover, setHover] = useState(false);
   return (
