@@ -1,18 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import MapIcon from "@/public/assets/svg/Map Pin.svg";
-import { FaSearch } from "react-icons/fa";
-import { FaAngleDown } from "react-icons/fa6";
-import { menus } from "@/Constant";
 import MobileNavbar from "@/components/Shared/MobileNavbar";
 import { Navbar } from "@/components/Shared/Navbar";
 import HeroSlider from "@/components/Shared/HeroSlider";
 import CursorFollower from "@/components/Shared/Mouse Effect/CursorFollower";
+import Categories from "@/components/Shared/Categories";
+import Products from "@/components/Shared/Products";
 
 export default function Home() {
   return (
     <div>
-      <CursorFollower />
+      {/* <CursorFollower /> */}
       {/* Top Stripe Start Fro Here */}
       <div className="hidden md:flex w-full md:mt-1 py-2 border-[gray]/40 md:border-t border-b ">
         <div className="wrapper flex items-center justify-between">
@@ -60,8 +59,11 @@ export default function Home() {
                   placeholder="Search..."
                   className="py-[17px] pl-12 pr-[18px] w-[400px] border-r-0 border-t border-b border-l rounded-e-none border-gray-300 rounded-lg focus:outline-none "
                 />
-                <FaSearch
-                  size={19}
+                <Image
+                  src="/assets/svg/Search.svg"
+                  alt="Right Svg"
+                  width={20}
+                  height={20}
                   className="absolute top-[8px] left-[6px] mt-3 ml-3 text-gray-500"
                 />
               </div>
@@ -122,9 +124,12 @@ export default function Home() {
         <MobileNavbar />
       </div>
       {/* Navbar End Here */}
-      {/* Slider Start From Here */}
+      {/* Slider Here */}
       <HeroSlider />
-      {/* Slider End Here */}
+      {/* Categories Here */}
+      <Categories />
+      {/* Products Here */}
+      <Products />
     </div>
   );
 }

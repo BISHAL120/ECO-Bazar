@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { HiOutlineArrowRight } from "react-icons/hi2";
 import {
   Carousel,
   CarouselContent,
@@ -163,10 +162,16 @@ const HeroSlider = () => {
                 Only Fruit & Vegetable
               </p>
               <Button
-                variant={"ghost"}
+                variant={"link"}
                 className="flex gap-3 text-lg font-semibold pl-0 items-center text-[#00B207] mt-5"
               >
-                Shop Now <HiOutlineArrowRight size={20} />
+                Shop Now{" "}
+                <Image
+                  src="/assets/svg/right arrow.svg"
+                  alt="Right Svg"
+                  width={16}
+                  height={16}
+                />
               </Button>
             </div>
           </div>
@@ -186,10 +191,16 @@ const HeroSlider = () => {
                 Special Products Deal of the Month
               </p>
               <Button
-                variant={"ghost"}
+                variant={"link"}
                 className="flex gap-3 text-base font-medium pl-0 items-center text-[#00B207] mt-5"
               >
-                Shop Now <HiOutlineArrowRight size={16} />
+                Shop Now{" "}
+                <Image
+                  src="/assets/svg/right arrow.svg"
+                  alt="Right Svg"
+                  width={16}
+                  height={16}
+                />
               </Button>
             </div>
           </div>

@@ -15,7 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
-import { components } from "@/Constant";
+import { Categories } from "@/Constant";
 
 export function Navbar() {
   const [menuImage, setMenuImage] = React.useState("/assets/Images/BG.png");
@@ -54,7 +54,6 @@ export function Navbar() {
                   </div>
                 </NavigationMenuLink>
               </li>
-              {/* {title: "Snacks", description: "Crunchy Delights: A Snacker's Paradise"} */}
               <ListItem
                 onMouseEnter={() => {
                   setMenuImage("/assets/Images/Snacks.png");
@@ -118,13 +117,13 @@ export function Navbar() {
           <NavigationMenuTrigger>All Category</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px] ">
-              {components.map((component) => (
+              {Categories.map((category) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={category.title}
+                  title={category.title}
+                  href={category.href}
                 >
-                  {component.description}
+                  {category.description}
                 </ListItem>
               ))}
             </ul>

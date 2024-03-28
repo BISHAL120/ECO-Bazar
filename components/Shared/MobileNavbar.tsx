@@ -23,7 +23,19 @@ const MobileNavbar = () => {
       <div className="h-full flex items-center justify-between">
         <Sheet>
           <SheetTrigger className="text-[#fff] p-[16px] mr-auto h-full bg-[#00B207]">
-            <FaBars size={24} className=" " />
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#ffffff"
+                fill-rule="evenodd"
+                d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+              />
+            </svg>
           </SheetTrigger>
           <SheetContent className="bg-[#333]">
             <div className="flex items-center gap-3 ">
@@ -51,7 +63,22 @@ const MobileNavbar = () => {
                           className="flex items-center justify-between"
                         >
                           {item.name}
-                          <FaAngleDown />
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 12 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g id="Group" stroke="#FFFFFF" stroke-width="1.5">
+                              <path
+                                id="Vector"
+                                d="M11.25 1.375L6 6.625L0.75 1.375"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                          </svg>
                         </div>
                         {subMenu === index && (
                           <div
@@ -75,7 +102,14 @@ const MobileNavbar = () => {
                         className="text-white/85 flex items-center justify-between w-full"
                       >
                         {item.name}
-                        {item?.icon && <FaAngleDown />}
+                        {item?.icon && (
+                          <Image
+                            src="/assets/svg/Group.svg"
+                            alt="down Svg"
+                            width={20}
+                            height={20}
+                          />
+                        )}
                       </Link>
                     )}
                   </>
