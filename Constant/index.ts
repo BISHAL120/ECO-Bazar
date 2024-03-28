@@ -194,8 +194,8 @@ export const Products = [
   },
   {
     id: 10,
-    name: "Big Potatoes",
-    price: 20.0,
+    name: "small Potatoes",
+    price: 14.99,
     image: "/assets/Images/Products/Image (5).png",
   },
   {
