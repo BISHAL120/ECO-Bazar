@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { FaAngleDown, FaBars } from "react-icons/fa6";
 import {
   Sheet,
   SheetContent,
