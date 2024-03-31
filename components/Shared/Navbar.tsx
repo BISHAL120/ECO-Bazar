@@ -118,10 +118,18 @@ export function Navbar() {
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px] ">
               {Categories.map((category) => (
                 <ListItem
+                  className="relative"
                   key={category.title}
                   title={category.title}
                   href={category.href}
                 >
+                  <Image
+                    src={`${category.icons}`}
+                    alt="Icons"
+                    width={25}
+                    height={25}
+                    className="absolute top-1 right-[5px]"
+                  />
                   {category.description}
                 </ListItem>
               ))}
