@@ -26,7 +26,7 @@ const Products = () => {
             />
           </Button>
         </div>
-        <div className="grid p-6 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+        <div className="grid p-6 place-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10">
           {products.map((item) => (
             <Product key={item.id} {...item} />
           ))}

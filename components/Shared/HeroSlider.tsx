@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { BsArrowRight } from "react-icons/bs";
 
 const HeroSlider = () => {
   return (
@@ -142,65 +143,53 @@ const HeroSlider = () => {
             </CarouselContent>
           </Carousel>
         </div>
-        <div className=" w-[100%] xl:w-[30%] flex flex-col md:flex-row xl:flex-col flex-shrink-0 gap-3 justify-around xl:justify-between">
-          <div className=" h-[290px] xl:h-[305px] relative">
+        <div className="w-[100%] xl:w-[30%] flex flex-row xl:flex-col flex-shrink-0 gap-3 justify-around xl:justify-between">
+          <div className="w-1/2 md:w-full rounded-xl overflow-hidden h- md:h-[290px] xl:h-[305px] relative">
             <Image
               src="/assets/Images/BG.png"
               alt="Slider mini 1"
-              width={423}
-              height={288}
-              className="w-full h-full rounded-xl"
+              width={600}
+              height={300}
+              className="w-full h-full"
             />
-            <div className="absolute top-8 left-8">
-              <p className="text-sm font-medium uppercase text-[#1A1A1A]">
+            <div className="absolute w-full h-full pt-3 pl-3 md:pt-8 md:pl-8 top-0 left-0 bg-white/30">
+              <p className="text-[8px] md:text-sm font-medium uppercase text-[#1A1A1A]">
                 Summer Sale
               </p>
-              <p className="mt-3 text-[32px] font-semibold text-[#1A1A1A]">
+              <p className="md:mt-3 mt-1 text-[18px] md:text-[32px] font-semibold text-[#1A1A1A]">
                 75% OFF
               </p>
-              <p className="text-sm font-normal text-[#666666]">
+              <p className="text-[10px] md:text-sm font-normal text-[#332f2f] md:text-[#666666]">
                 Only Fruit & Vegetable
               </p>
               <Button
                 variant={"link"}
-                className="flex gap-3 text-lg font-semibold pl-0 items-center text-[#00B207] mt-5"
+                className="flex gap-3 text-lg font-semibold pl-0 items-center text-[#000] md:text-[#00B207] md:mt-5 mt-1"
               >
-                Shop Now{" "}
-                <Image
-                  src="/assets/svg/right arrow.svg"
-                  alt="Right Svg"
-                  width={16}
-                  height={16}
-                />
+                Shop Now <BsArrowRight />
               </Button>
             </div>
           </div>
-          <div className=" h-[290px] xl:h-[305px] relative">
+          <div className="w-1/2 md:w-full rounded-xl overflow-hidden md:h-[290px] xl:h-[305px] relative">
             <Image
               src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Slider mini 2"
-              width={423}
-              height={288}
-              className="h-full w-full rounded-xl "
+              width={600}
+              height={300}
+              className="h-full w-full "
             />
-            <div className="absolute top-16 left-1/2 -translate-x-1/2">
-              <p className="text-sm font-medium uppercase text-[#FFFFFF] mb-3">
+            <div className="absolute w-full h-full pt-3 pl-3 md:pt-8 md:pl-8 top-0 left-0 bg-black/30">
+              <p className="text-[10px] md:text-sm font-medium uppercase text-[#f5f5f5] md:text-[#FFFFFF] mb-1 md:mb-3">
                 Best Deal
               </p>
-              <p className="w-[330px] font-semibold text-[30px] text-[#FFFFFF] mb-6">
+              <p className="w-full md:w-[330px] font-medium md:font-semibold text-[14px] md:text-[30px] text-[#f5f5f5] md:text-[#FFFFFF] mb-0 md:mb-6">
                 Special Products Deal of the Month
               </p>
               <Button
                 variant={"link"}
-                className="flex gap-3 text-base font-medium pl-0 items-center text-[#00B207] mt-5"
+                className="flex gap-3 text-base font-medium pl-0 items-center text-[#ffffff] md:text-[#f5f5f5] mt-2 md:mt-5"
               >
-                Shop Now{" "}
-                <Image
-                  src="/assets/svg/right arrow.svg"
-                  alt="Right Svg"
-                  width={16}
-                  height={16}
-                />
+                Shop Now <BsArrowRight />
               </Button>
             </div>
           </div>

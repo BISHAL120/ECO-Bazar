@@ -2,6 +2,7 @@
 import { Salsa } from "next/font/google";
 import Image from "next/image";
 import React, { useState } from "react";
+import { BsCart } from "react-icons/bs";
 
 const Product = ({
   id,
@@ -23,19 +24,18 @@ const Product = ({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="w-[350px] lg:w-[300px] relative hover:border-[#2C742F] group border border-[#E6E6E6]"
+      className="w-[170px] min-h-[265px] lg:w-[300px] flex flex-col justify-between relative hover:border-[#2C742F] group border border-[#E6E6E6]"
     >
       <div className=" flex justify-center">
         <Image
           src={image}
           alt={`Product ${id}`}
-          width={250}
-          height={230}
+          width={150}
+          height={130}
           quality={80}
-          className="w-full"
         />
       </div>
-      <div className="p-4">
+      <div className="p-4 h-fulls mt-auto">
         <div className="flex justify-between items-center">
           <div>
             <p className="font-normal text-[14px] text-[#4D4D4D]">{name}</p>
@@ -50,47 +50,11 @@ const Product = ({
               )}
             </p>
           </div>
-          <div className="w-[45px] h-[45px] flex justify-center items-center  transition duration-500 bg-[#F2F2F2]/80 group-hover:bg-[#00B207] rounded-full">
+          <div className="w-[45px] h-[45px] flex justify-center items-center transition duration-500 bg-[#F2F2F2]/40 2xl:group-hover:bg-[#00B207] rounded-full absolute bottom-3 right-3 cursor-pointer">
             {/* <Image src="/assets/svg/Bag.svg" alt="" width={20} height={20} /> */}
-            {hover ? (
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 34 35"
-                fill="#00B207"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Bag">
-                  <path
-                    id="Rectangle"
-                    d="M11.3333 14.6667H7.08333L4.25 30.25H29.75L26.9167 14.6667H22.6667M11.3333 14.6667V10.4167C11.3333 7.28705 13.8704 4.75 17 4.75V4.75C20.1296 4.75 22.6667 7.28705 22.6667 10.4167V14.6667M11.3333 14.6667H22.6667M11.3333 14.6667V18.9167M22.6667 14.6667V18.9167"
-                    stroke="#ffffff"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            ) : (
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 34 35"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="Bag">
-                  <path
-                    id="Rectangle"
-                    d="M11.3333 14.6667H7.08333L4.25 30.25H29.75L26.9167 14.6667H22.6667M11.3333 14.6667V10.4167C11.3333 7.28705 13.8704 4.75 17 4.75V4.75C20.1296 4.75 22.6667 7.28705 22.6667 10.4167V14.6667M11.3333 14.6667H22.6667M11.3333 14.6667V18.9167M22.6667 14.6667V18.9167"
-                    stroke="#1A1A1A"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            )}
+            <BsCart className="2xl:group-hover:text-[#f5f5f5] transition duration-500" />
+            {/* TODO: Change the icons when add to cart */}
+            {/* <BsCartCheck /> */}
           </div>
         </div>
         <div className="mt-3">
@@ -105,7 +69,7 @@ const Product = ({
       </div>
       {hover && (
         <div className="absolute right-3 top-3 flex flex-col gap-2">
-          <div className="w-10 h-10 bg-white/70 rounded-full flex justify-center items-center">
+          <div className="w-10 h-10 bg-white/70 rounded-full cursor-pointer flex justify-center items-center">
             {" "}
             <Image
               src="/assets/svg/Heart.svg"
@@ -114,7 +78,7 @@ const Product = ({
               height={20}
             />
           </div>
-          <div className="w-10 h-10 bg-white/70 rounded-full flex justify-center items-center">
+          <div className="w-10 h-10 bg-white/70 cursor-pointer rounded-full flex justify-center items-center">
             <Image
               src="/assets/svg/Eye 1.svg"
               alt="Eye Svg"

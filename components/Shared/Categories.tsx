@@ -14,53 +14,75 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import { BsArrowRight } from "react-icons/bs";
 
 const Categories = () => {
-  const [CategorySlide, setCategorySlide] = useState(true);
+  const [CategorySlide, setCategorySlide] = useState("row");
   return (
     <div className="mb-[50px]">
       <div className="md:wrapper">
         <div className="flex justify-between items-center m-4 mt-16 mb-6 md:mt-20 md:mb-8">
-          <p className="text-[#1A1A1A] text-[24px] md:text-[32px] font-semibold">
+          <p className="text-[#1A1A1A] text-[18px] md:text-[32px] font-semibold">
             Popular Categories
           </p>
-          <div className="flex items-center gap-3">
-            {CategorySlide && (
-              <HiViewBoards
-                size={24}
-                onClick={() => setCategorySlide(!CategorySlide)}
-              />
-            )}
-            {!CategorySlide && (
-              <HiViewGrid
-                size={24}
-                onClick={() => setCategorySlide(!CategorySlide)}
-              />
-            )}
-
+          <div className="flex items-center ">
+            <div className="hidden md:flex gap-3 m-4">
+              {" "}
+              <div
+                className={`w-[30px] h-[30px] flex justify-center items-center rounded-md cursor-pointer${
+                  CategorySlide === "row" ? " bg-[#ccbebe]" : ""
+                }`}
+              >
+                <HiViewBoards
+                  size={16}
+                  onClick={() => setCategorySlide("row")}
+                />
+              </div>
+              <div
+                className={`w-[30px] h-[30px] flex justify-center items-center rounded-md cursor-pointer${
+                  CategorySlide === "grid" ? " bg-[#ccbebe]" : ""
+                }`}
+              >
+                <HiViewGrid
+                  size={18}
+                  onClick={() => setCategorySlide("grid")}
+                />
+              </div>
+            </div>
             <Button
               type="button"
               variant="link"
               className="flex gap-2 text-xs font-medium text-[#00B207]"
             >
-              View All{" "}
-              <Image
-                src="/assets/svg/right arrow.svg"
-                alt="Right Svg"
-                width={12}
-                height={12}
-              />
+              View All <BsArrowRight size={18} />
             </Button>
           </div>
         </div>
-        {!CategorySlide && (
-          <div className="grid place-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-2 gap-3 md:gap-6">
+        <div className=" flex gap-3 justify-end mr-5 md:hidden mb-10">
+          {" "}
+          <div
+            className={`w-[40px] h-[40px] flex justify-center items-center rounded-md${
+              CategorySlide === "row" ? " bg-[#ccbebe]" : ""
+            }`}
+          >
+            <HiViewBoards size={25} onClick={() => setCategorySlide("row")} />
+          </div>
+          <div
+            className={`w-[40px] h-[40px] flex justify-center items-center rounded-md${
+              CategorySlide === "grid" ? " bg-[#ccbebe]" : ""
+            }`}
+          >
+            <HiViewGrid size={30} onClick={() => setCategorySlide("grid")} />
+          </div>
+        </div>
+        {CategorySlide === "grid" && (
+          <div className="grid place-items-center grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 px-2 gap-3 md:gap-6">
             {categories.map((category) => (
               <Category key={category.href} {...category} />
             ))}
           </div>
         )}
-        {CategorySlide && (
+        {CategorySlide === "row" && (
           <div className="px-10">
             <Carousel
               opts={{
@@ -70,7 +92,10 @@ const Categories = () => {
             >
               <CarouselContent>
                 {categories.map((category) => (
-                  <CarouselItem key={category.href} className="basis-[224px]">
+                  <CarouselItem
+                    key={category.href}
+                    className="basis-[108px] md:basis-[150px] xl:basis-[180px] 2xl:basis-[224px]"
+                  >
                     <Category2 key={category.href} {...category} />
                   </CarouselItem>
                 ))}
