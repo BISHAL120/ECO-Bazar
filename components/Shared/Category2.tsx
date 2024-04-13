@@ -3,7 +3,7 @@ import React from "react";
 
 const Category2 = ({ title, icons }: { title: string; icons: string }) => {
   return (
-    <div className="w-[100px] h-[130px] md:w-[140px] md:h-[160px] xl:w-[170px] 2xl:w-[200px] border border-[#e0dbdb] rounded-[5px] hover:shadow-[#2C742F] cursor-pointer hover:border-[#2C742F]">
+    <div className="w-[95px] h-[130px] md:w-[140px] md:h-[160px] xl:w-[170px] 2xl:w-[200px] border border-[#e0dbdb] rounded-[5px] hover:shadow-[#2C742F] cursor-pointer hover:border-[#2C742F]">
       <div className="flex justify-center">
         <Image
           src={`${icons}`}

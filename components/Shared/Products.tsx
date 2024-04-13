@@ -6,7 +6,7 @@ import { Products as products } from "@/Constant";
 
 const Products = () => {
   return (
-    <div className="mb-[50px]">
+    <div className="mb-8 md:mb-[50px]">
       <div className="md:wrapper">
         <div className="flex justify-between items-center m-4 mt-16 mb-6 md:mt-20 md:mb-8">
           <p className="text-[#1A1A1A] text-[24px] md:text-[32px] font-semibold">

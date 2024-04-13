@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { FaBars } from "react-icons/fa6";
 import {
   Sheet,
   SheetContent,
@@ -22,22 +23,9 @@ const MobileNavbar = () => {
       <div className="h-full flex items-center justify-between">
         <Sheet>
           <SheetTrigger className="text-[#fff] p-[16px] mr-auto h-full bg-[#00B207]">
-            <svg
-              width="100%"
-              height="100%"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              className=""
-            >
-              <path
-                fill="#ffffff"
-                fill-rule="evenodd"
-                d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
-              />
-            </svg>
+            <FaBars size={26} />
           </SheetTrigger>
-          <SheetContent className="bg-[#333]">
+          <SheetContent side={"left"} className="bg-[#333]">
             <div className="flex items-center gap-3 ">
               <Image
                 src="/assets/svg/plant 1.svg"
@@ -53,7 +41,7 @@ const MobileNavbar = () => {
             <div className="mt-6 w-full flex flex-col gap-4">
               {menus.map((item, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     {item?.icon ? (
                       <div key={index} className="text-white  w-full">
                         <div
@@ -112,7 +100,7 @@ const MobileNavbar = () => {
                         )}
                       </Link>
                     )}
-                  </>
+                  </div>
                 );
               })}
             </div>
