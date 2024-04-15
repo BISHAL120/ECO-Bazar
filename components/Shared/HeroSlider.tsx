@@ -29,41 +29,43 @@ const HeroSlider = () => {
             }}
           >
             <CarouselContent>
-              <CarouselItem className="relative">
+              <CarouselItem className="">
                 <Image
                   src="https://images.pexels.com/photos/2122278/pexels-photo-2122278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Food Image"
                   width={1000}
                   height={650}
-                  className=" rounded-lg overflow-hidden"
+                  className="w-full rounded-lg overflow-hidden relative"
                 />
-                <div className="md:w-[90%] w-[100%] pt-20 md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-b from-[#222831]/70 md:to-white/50 rounded-lg p-5 ">
-                  <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
-                    Fresh & Healthy Organic Food
-                  </h2>
-                  <p className="md:mt-7 md:text-start text-center text-sm md:text-[14px] font-normal text-white mt-6 ">
-                    Free shipping on all your order.
-                  </p>
-                  <div className="flex items-center justify-center md:justify-start gap-3 mt-1 md:mt-2 md:mb-6 mb-5">
-                    <p className="text-white font-medium text-base md:text-[20px]">
-                      Sale up to
+                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden">
+                  <div className="mr-4">
+                    <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
+                      Fresh & Healthy Organic Food
+                    </h2>
+                    <p className="md:mt-7 md:text-start text-center text-sm md:text-[14px] font-normal text-white mt-6 ">
+                      Free shipping on all your order.
                     </p>
-                    <p className="md:w-[110px] h-8 md:h-10 bg-[#FF8A00] py-1 px-2 md:px-3 font-semibold text-base md:text-[20px] text-white rounded-sm">
-                      30% oFF
-                    </p>
+                    <div className="flex items-center justify-center md:justify-start gap-3 mt-1 md:mt-2 md:mb-6 mb-5">
+                      <p className="text-white font-medium text-base md:text-[20px]">
+                        Sale up to
+                      </p>
+                      <p className="md:w-[110px] h-8 md:h-10 bg-[#FF8A00] py-1 px-2 md:px-3 font-semibold text-base md:text-[20px] text-white rounded-sm">
+                        30% oFF
+                      </p>
+                    </div>
+                    <Button
+                      size={"sm"}
+                      className="flex gap-2 mx-auto md:mx-0 mt-3 items-center tex-[10px] md:text-[16px] md:h-10 md:rounded-md md:px-8"
+                    >
+                      Shop now
+                      <Image
+                        src="/assets/svg/right arrow.svg"
+                        alt="right arrow SVG"
+                        width={20}
+                        height={16}
+                      />
+                    </Button>
                   </div>
-                  <Button
-                    size={"sm"}
-                    className="flex gap-2 mx-auto md:mx-0 mt-3 items-center tex-[10px] md:text-[16px] md:h-10 md:rounded-md md:px-8"
-                  >
-                    Shop now
-                    <Image
-                      src="/assets/svg/right arrow.svg"
-                      alt="right arrow SVG"
-                      width={20}
-                      height={16}
-                    />
-                  </Button>
                 </div>
               </CarouselItem>
               <CarouselItem className="relative rounded-lg overflow-hidden">
@@ -72,35 +74,37 @@ const HeroSlider = () => {
                   alt="Food Image"
                   width={1000}
                   height={650}
-                  className=" rounded-lg overflow-hidden"
+                  className="w-full rounded-lg overflow-hidden relative"
                 />
-                <div className="md:w-[90%] w-[100%] pt-20 md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-14 bg-gradient-to-b from-[#222831]/70 md:to-white/50 rounded-lg p-5 ">
-                  <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
-                    Exploring the World of Organic
-                  </h2>
-                  <p className="md:mt-7 md:text-start text-center text-sm md:text-[14px] font-normal text-white mt-6 ">
-                    Free shipping on all your order.
-                  </p>
-                  <div className="flex items-center justify-center md:justify-start gap-3 mt-1 md:mt-2 md:mb-6 mb-5">
-                    <p className="text-white font-medium text-base md:text-[20px]">
-                      Sale up to
+                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden">
+                  <div className="mr-4">
+                    <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
+                      Exploring the World of Organic
+                    </h2>
+                    <p className="md:mt-7 md:text-start text-center text-sm md:text-[14px] font-normal text-white mt-6 ">
+                      Free shipping on all your order.
                     </p>
-                    <p className="md:w-[110px] h-8 md:h-10 bg-[#FF8A00] py-1 px-2 md:px-3 font-semibold text-base md:text-[20px] text-white rounded-sm">
-                      30% oFF
-                    </p>
+                    <div className="flex items-center justify-center md:justify-start gap-3 mt-1 md:mt-2 md:mb-6 mb-5">
+                      <p className="text-white font-medium text-base md:text-[20px]">
+                        Sale up to
+                      </p>
+                      <p className="md:w-[110px] h-8 md:h-10 bg-[#FF8A00] py-1 px-2 md:px-3 font-semibold text-base md:text-[20px] text-white rounded-sm">
+                        30% oFF
+                      </p>
+                    </div>
+                    <Button
+                      size={"sm"}
+                      className="flex gap-2 mx-auto md:mx-0 mt-3 items-center tex-[10px] md:text-[16px] md:h-10 md:rounded-md md:px-8"
+                    >
+                      Shop now
+                      <Image
+                        src="/assets/svg/right arrow.svg"
+                        alt="right arrow SVG"
+                        width={20}
+                        height={16}
+                      />
+                    </Button>
                   </div>
-                  <Button
-                    size={"sm"}
-                    className="flex gap-2 mx-auto md:mx-0 mt-3 items-center tex-[10px] md:text-[16px] md:h-10 md:rounded-md md:px-8"
-                  >
-                    Shop now
-                    <Image
-                      src="/assets/svg/right arrow.svg"
-                      alt="right arrow SVG"
-                      width={20}
-                      height={16}
-                    />
-                  </Button>
                 </div>
               </CarouselItem>
               <CarouselItem className="relative rounded-lg overflow-hidden">
@@ -109,42 +113,44 @@ const HeroSlider = () => {
                   alt="Food Image"
                   width={1000}
                   height={650}
-                  className=" rounded-lg overflow-hidden"
+                  className=" w-full rounded-lg overflow-hidden relative"
                 />
-                <div className="md:w-[90%] w-[100%] pt-20 md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-14 bg-gradient-to-b from-[#222831]/70 md:to-white/50 rounded-lg p-5 ">
-                  <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
-                    A Fresh Approach to Healthy
-                  </h2>
-                  <p className="md:mt-7 md:text-start text-center text-sm md:text-[14px] font-normal text-white mt-6 ">
-                    Free shipping on all your order.
-                  </p>
-                  <div className="flex items-center justify-center md:justify-start gap-3 mt-1 md:mt-2 md:mb-6 mb-5">
-                    <p className="text-white font-medium text-base md:text-[20px]">
-                      Sale up to
+                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden ">
+                  <div className="mr-4">
+                    <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
+                      A Fresh Approach to Healthy
+                    </h2>
+                    <p className="md:mt-7 md:text-start text-center text-sm md:text-[14px] font-normal text-white mt-6 ">
+                      Free shipping on all your order.
                     </p>
-                    <p className="md:w-[110px] h-8 md:h-10 bg-[#FF8A00] py-1 px-2 md:px-3 font-semibold text-base md:text-[20px] text-white rounded-sm">
-                      30% oFF
-                    </p>
+                    <div className="flex items-center justify-center md:justify-start gap-3 mt-1 md:mt-2 md:mb-6 mb-5">
+                      <p className="text-white font-medium text-base md:text-[20px]">
+                        Sale up to
+                      </p>
+                      <p className="md:w-[110px] h-8 md:h-10 bg-[#FF8A00] py-1 px-2 md:px-3 font-semibold text-base md:text-[20px] text-white rounded-sm">
+                        30% oFF
+                      </p>
+                    </div>
+                    <Button
+                      size={"sm"}
+                      className="flex gap-2 mx-auto md:mx-0 mt-3 items-center tex-[10px] md:text-[16px] md:h-10 md:rounded-md md:px-8"
+                    >
+                      Shop now
+                      <Image
+                        src="/assets/svg/right arrow.svg"
+                        alt="right arrow SVG"
+                        width={20}
+                        height={16}
+                      />
+                    </Button>
                   </div>
-                  <Button
-                    size={"sm"}
-                    className="flex gap-2 mx-auto md:mx-0 mt-3 items-center tex-[10px] md:text-[16px] md:h-10 md:rounded-md md:px-8"
-                  >
-                    Shop now
-                    <Image
-                      src="/assets/svg/right arrow.svg"
-                      alt="right arrow SVG"
-                      width={20}
-                      height={16}
-                    />
-                  </Button>
                 </div>
               </CarouselItem>
             </CarouselContent>
           </Carousel>
         </div>
-        <div className="w-[100%] xl:w-[30%] flex flex-row xl:flex-col flex-shrink-0 gap-3 justify-around xl:justify-between">
-          <div className="w-1/2 md:w-full rounded-xl overflow-hidden h- md:h-[290px] xl:h-[305px] relative">
+        <div className="w-[100%] xl:w-[30%] flex flex-row xl:flex-col flex-shrink-0 gap-3 justify-around ">
+          <div className="w-1/2 md:w-full rounded-xl overflow-hidden relative">
             <Image
               src="/assets/Images/BG.png"
               alt="Slider mini 1"
@@ -170,7 +176,7 @@ const HeroSlider = () => {
               </Button>
             </div>
           </div>
-          <div className="w-1/2 md:w-full rounded-xl overflow-hidden md:h-[290px] xl:h-[305px] relative">
+          <div className="w-1/2 md:w-full rounded-xl overflow-hidden relative">
             <Image
               src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Slider mini 2"

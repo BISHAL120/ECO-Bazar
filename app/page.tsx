@@ -41,16 +41,19 @@ export default function Home() {
       <div>
         <div className="wrapper py-2 md:py-5">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-3 ">
-              <Image
-                src="/assets/svg/plant 1.svg"
-                alt=""
-                width={40}
-                height={40}
-                className="w-7 md:w-[40px]"
-              />
-              <p className="md:text-4xl text-xl font-medium">Ecobazar</p>
-            </div>
+            <Link href="/">
+              <div className="flex items-center gap-3 ">
+                <Image
+                  src="/assets/svg/plant 1.svg"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="w-7 md:w-[40px]"
+                />
+                <p className="md:text-4xl text-xl font-medium">Ecobazar</p>
+              </div>
+            </Link>
+
             <div className="hidden lg:flex  ">
               <div className="relative">
                 <input
