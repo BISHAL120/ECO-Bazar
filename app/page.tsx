@@ -7,6 +7,7 @@ import HeroSlider from "@/components/Shared/HeroSlider";
 import Categories from "@/components/Shared/Categories";
 import Products from "@/components/Shared/Products";
 import Banner from "@/components/Shared/Banner";
+import Newsletter from "@/components/Shared/Newsletter";
 
 export default function Home() {
   return (
@@ -134,6 +135,8 @@ export default function Home() {
       <Products />
       {/* Advertize banner */}
       <Banner />
+      {/* NewsLetter Section */}
+      {/* <Newsletter /> */}
     </div>
   );
 }

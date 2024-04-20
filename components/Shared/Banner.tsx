@@ -2,37 +2,38 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { BsArrowRight } from "react-icons/bs";
+import { url } from "inspector";
 
 const Banner = () => {
   return (
-    <div>
-      <div className="max-w-[1380px] mx-auto relative mt-0 xl:mt-[120px] mb-10 xl:mb-[120px]">
-        <Image
-          src="/assets/Images/Banner/banner.jpg"
-          alt="Banner Image"
-          width={2000}
-          height={500}
-          className="relative xl:rounded-lg xl:overflow-hidden"
-        />
-        <div className="absolute top-0 left-0 bg-black/50 w-full h-full pl-2 pt-2 md:pl-14 xl:pl-32 md:pt-14 xl:pt-28 wrapper xl:rounded-lg overflow-hidden">
-          <p className="text-white font-medium text-sm md:text-base text-center md:text-start uppercase leading-5 tracking-[0.32px]">
-            Summer Sale
-          </p>
-          <p className="md:mt-3 text-center md:text-start mt-0 h-14 md:h-[70px]">
-            <span className="text-[#FF8A00] text-[30px] md:text-[56px] leading-[67px] font-semibold mr-1 md:mr-2">
-              37%
-            </span>{" "}
-            <span className="text-[#ffffff] text-[30px] md:text-[56px] leading-[67px] font-semibold ml-2">
-              OFF
-            </span>
-          </p>
-          <p className="text-sm text-center md:text-start md:text-[16px] font-normal leading-6 text-[#ffffff]/70 mt-1 md:mt-4">
-            Free on all your order, Free Shipping and 30 days money-back
-            guarantee
-          </p>
-          <Button className="bg-[#00B207] mt-10">
-            Shop Now <BsArrowRight />
-          </Button>
+    <div className="md:wrapper">
+      <div
+        style={{ backgroundImage: "url('/assets/Images/Banner/banner.jpg')" }}
+        className=" h-auto mx-auto relative mt-5 mb-10 bg-cover bg-center md:rounded-lg md:overflow-hidden md:mx-5"
+      >
+        <div className="py-5 bg-black/50 w-full h-full xl:rounded-lg overflow-hidden">
+          <div className="h-full w-full flex flex-col items-center justify-center md:items-start md:pl-[10%]">
+            <p className="w-full pb-3 text-white font-normal md:font-medium text-sm md:text-base text-center md:text-start uppercase md:leading-5 md:tracking-[0.32px]">
+              Summer Sale
+            </p>
+            <p className="md:mt-3 text-center md:text-start mt-0 flex items-center h-[45px] md:h-auto">
+              <span className="text-[#FF8A00] text-[30px] md:text-[56px] leading-[67px] font-semibold mr-1 md:mr-2">
+                37%
+              </span>{" "}
+              <span className="text-[#ffffff] text-[30px] md:text-[56px] leading-[67px] font-semibold ml-2">
+                OFF
+              </span>
+            </p>
+            <p className="text-sm text-center md:text-start md:text-[16px] font-normal md:leading-6 text-[#ffffff]/70 mt-1 md:mt-4">
+              Free on all your order, Free Shipping and 30 days money-back
+              guarantee
+            </p>
+            <div className="">
+              <Button className="bg-[#00B207] mt-5 md:mt-10">
+                Shop Now <BsArrowRight />
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
