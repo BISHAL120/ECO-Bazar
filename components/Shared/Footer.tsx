@@ -59,7 +59,7 @@ const Footer = () => {
               Privacy Policy
             </p>
           </div>
-          <div className="p-2 max-w-[150px] xl:max-w-full col-span-2 lg:col-span-1 md:col-start-5 lg:col-start-1 xl:col-start-5">
+          <div className="p-2 max-w-[150px] xl:max-w-full col-span-2 lg:col-span-1 md:col-start-5 lg:col-start-1 xl:col-start-5 md:pl-5">
             <h2 className="text-xl font-medium text-[#FFFFFF]">Proxy</h2>
             <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
               About

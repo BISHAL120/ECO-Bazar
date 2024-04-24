@@ -78,6 +78,10 @@
   }
 }
 
-body {
-  background-color: #e7e4db;
+.no-scrollBar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

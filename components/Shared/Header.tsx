@@ -4,6 +4,19 @@ import Link from "next/link";
 import MapIcon from "@/public/assets/svg/Map Pin.svg";
 import MobileNavbar from "@/components/Shared/MobileNavbar";
 import { Navbar } from "@/components/Shared/Navbar";
+import { CiCircleRemove } from "react-icons/ci";
+import { MdAddShoppingCart } from "react-icons/md";
+
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
+import { Button } from "../ui/button";
 
 const Header = () => {
   return (
@@ -72,30 +85,338 @@ const Header = () => {
             </div>
             <div>
               <div className="flex items-center gap-4">
-                <Image
-                  src="/assets/svg/Heart.svg"
-                  alt="Wish-List"
-                  width={30}
-                  height={30}
-                  className="cursor-pointer"
-                />
+                <Sheet>
+                  <SheetTrigger>
+                    <Image
+                      src="/assets/svg/Heart.svg"
+                      alt="Wish-List"
+                      width={30}
+                      height={30}
+                      className="cursor-pointer"
+                    />
+                  </SheetTrigger>
+                  <SheetContent>
+                    <SheetHeader>
+                      <SheetTitle className="text-[20px] text-start font-medium text-[#1A1A1A]">
+                        My Wishlist (4)
+                      </SheetTitle>
+                    </SheetHeader>
+
+                    {/* className={classNames('mb-4', {
+                        'mb-0': index === items.length - 1 */}
+
+                    <div className="flex flex-col justify-between h-full">
+                      <div className="mt-10 overflow-scroll overflow-x-hidden no-scrollBar">
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image (1).png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>{" "}
+                                /{" "}
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <MdAddShoppingCart size={25} />
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image.png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <MdAddShoppingCart size={25} />
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image (2).png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <MdAddShoppingCart size={25} />
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image (3).png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <MdAddShoppingCart size={25} />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="">
+                        <div className="flex justify-between items-center py-6">
+                          <p className="text-[#1A1A1A] text-base font-normal leading-[24px]">
+                            4 Product
+                          </p>
+                          <p>$48.00</p>
+                        </div>
+                        <div className="mb-4">
+                          <Button
+                            size={"big"}
+                            className="py-4 px-10  w-full rounded-[43px] mb-2"
+                          >
+                            Go to Wishlist
+                          </Button>
+                          {/* <button className="py-4 text-[#00B207] px-10 bg-[#56AC591A] w-full rounded-[43px]">
+                            Checkout
+                          </button> */}
+                        </div>
+                      </div>
+                    </div>
+                  </SheetContent>
+                </Sheet>
                 <div className="h-[20px] md:h-7 w-[1px] bg-black/45"></div>
-                <div className="relative cursor-pointer">
-                  <Image
-                    src="/assets/svg/Bag.svg"
-                    alt="Cart"
-                    width={30}
-                    height={30}
-                    className=""
-                  />
-                  <span className=" flex justify-center items-center absolute top-[-5px] right-[-8px] md:right-[-3px] w-[18px] h-[18px] text-[10px] rounded-full bg-[#2C742F] text-white">
-                    5
-                  </span>
-                </div>
-                <div className="text-sm cursor-pointer">
-                  <p className="hidden md:block ">Shopping cart:</p>
-                  <p>$57.00</p>
-                </div>
+
+                <Sheet>
+                  <SheetTrigger>
+                    <div className="flex items-center md:items-end justify-center gap-4">
+                      <div className="relative cursor-pointer mb-[2px]">
+                        <Image
+                          src="/assets/svg/Bag.svg"
+                          alt="Cart"
+                          width={30}
+                          height={30}
+                          className=""
+                        />
+                        <span className=" flex justify-center items-center absolute top-[-5px] right-[-8px] md:right-[-3px] w-[18px] h-[18px] text-[10px] rounded-full bg-[#2C742F] text-white">
+                          5
+                        </span>
+                      </div>
+                      <div className="text-sm cursor-pointer text-start">
+                        <p className="hidden md:block ">Shopping cart:</p>
+                        <p>$57.00</p>
+                      </div>
+                    </div>
+                  </SheetTrigger>
+                  <SheetContent>
+                    <SheetHeader>
+                      <SheetTitle className="text-[20px] text-start font-medium text-[#1A1A1A]">
+                        Shopping Card (4)
+                      </SheetTitle>
+                    </SheetHeader>
+
+                    {/* className={classNames('mb-4', {
+                        'mb-0': index === items.length - 1 */}
+
+                    <div className="flex flex-col justify-between h-full">
+                      <div className="mt-10 overflow-scroll overflow-x-hidden no-scrollBar">
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image (1).png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <CiCircleRemove size={25} />
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image.png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <CiCircleRemove size={25} />
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image (2).png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <CiCircleRemove size={25} />
+                          </div>
+                        </div>
+                        <div className="flex justify-between items-center mb-1 border-b border-[#E6E6E6]">
+                          <div className="flex justify-start items-center gap-2">
+                            <div className="bg-white">
+                              <Image
+                                src="/assets/Images/Products/Image (3).png"
+                                alt="Product Image"
+                                width={120}
+                                height={100}
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[14px] leading-[21px] text-[#1A1A1A] font-normal text-start">
+                                Fresh Indian Orange
+                              </p>
+                              <p className="flex items-center justify-start gap-2">
+                                <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
+                                  1 kg
+                                </span>{" "}
+                                x{" "}
+                                <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
+                                  12.00
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                          <div>
+                            <CiCircleRemove size={25} />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="">
+                        <div className="flex justify-between items-center py-6">
+                          <p className="text-[#1A1A1A] text-base font-normal leading-[24px]">
+                            4 Product
+                          </p>
+                          <p>$48.00</p>
+                        </div>
+                        <div className="mb-4">
+                          <button className="py-4 text-white px-10 bg-[#00B207] w-full rounded-[43px] mb-2">
+                            Checkout
+                          </button>
+                          <button className="py-4 text-[#00B207] px-10 bg-[#56AC591A] w-full rounded-[43px]">
+                            Go To Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </SheetContent>
+                </Sheet>
               </div>
             </div>
           </div>
