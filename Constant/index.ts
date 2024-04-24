@@ -43,13 +43,7 @@ export const menus = [
   { name: "Contact us", href: "/contact" },
 ];
 
-export const Categories: {
-  title: string;
-  href: string;
-  description: string;
-  image: string;
-  icons: string;
-}[] = [
+export const Categories = [
   {
     title: "Fresh Fruit",
     description:

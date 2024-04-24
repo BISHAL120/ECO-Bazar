@@ -70,7 +70,7 @@ const Product = ({
             {/* <BsCartCheck /> */}
           </div>
         </div>
-        <div className="mt-3">
+        <div className="mt-3 flex items-center gap-2 ">
           <p className="flex gap-[2px]">
             <Image src="/assets/svg/Star 3.svg" alt="" width={12} height={12} />
             <Image src="/assets/svg/Star 3.svg" alt="" width={12} height={12} />
@@ -78,6 +78,7 @@ const Product = ({
             <Image src="/assets/svg/Star 3.svg" alt="" width={12} height={12} />
             <Image src="/assets/svg/Star 5.svg" alt="" width={12} height={12} />
           </p>
+          <p className="text-[13px]">4.5</p>
         </div>
       </div>
       {hover && (
@@ -107,7 +108,21 @@ const Product = ({
               <DialogContent className="xl:max-w-[1000px] max-w-[95%]">
                 <div className="flex gap-12 items-start">
                   <div className=" h-full w-1/2">
-                    <Carousel orientation="vertical" className="w-full">
+                    <Carousel
+                      plugins={[
+                        Autoplay({
+                          delay: 3000,
+                          stopOnMouseEnter: false,
+                          stopOnInteraction: false,
+                        }),
+                      ]}
+                      opts={{
+                        loop: true,
+                        active: true,
+                      }}
+                      orientation="vertical"
+                      className="w-full"
+                    >
                       <CarouselContent className="h-[400px] p-2 touch-pan-y">
                         <CarouselItem className=" xl:basis-full basis-[80%]">
                           <div className="p-1">
@@ -163,39 +178,40 @@ const Product = ({
                     <div className="font-semibold text-[36px] inline-block text-[#1A1A1A]">
                       {name}
                     </div>
-                    <div className="mt-3">
+                    <div className="mt-3 flex items-center gap-3 ">
                       <p className="flex gap-[2px]">
                         <Image
                           src="/assets/svg/Star 3.svg"
                           alt=""
-                          width={22}
-                          height={22}
+                          width={12}
+                          height={12}
                         />
                         <Image
                           src="/assets/svg/Star 3.svg"
                           alt=""
-                          width={22}
-                          height={22}
+                          width={12}
+                          height={12}
                         />
                         <Image
                           src="/assets/svg/Star 3.svg"
                           alt=""
-                          width={22}
-                          height={22}
+                          width={12}
+                          height={12}
                         />
                         <Image
                           src="/assets/svg/Star 3.svg"
                           alt=""
-                          width={22}
-                          height={22}
+                          width={12}
+                          height={12}
                         />
                         <Image
                           src="/assets/svg/Star 5.svg"
                           alt=""
-                          width={22}
-                          height={22}
+                          width={12}
+                          height={12}
                         />
                       </p>
+                      <p className="text-[15px]"> 4.5 / 5</p>
                     </div>
                     <div>
                       <p className="flex items-center mt-1 gap-2">
@@ -223,12 +239,12 @@ const Product = ({
                       </p>
                     </div>
                     <div className="lg:mt-14 w-full mt-10 flex justify-center items-center gap-3 h-14">
-                      <div className="flex items-center w-2/4 border border-[#E6E6E6] rounded-[170px] p-2 h-full">
-                        <span className="w-[35px] h-[35px] bg-[#F2F2F2] rounded-full flex justify-center items-center">
+                      <div className="flex justify-evenly items-center w-2/4 border border-[#E6E6E6] rounded-[170px] p-2 h-full">
+                        <span className="w-[35px] cursor-pointer h-[35px] bg-[#F2F2F2] rounded-full flex justify-center items-center">
                           <FaMinus />
                         </span>
                         <span className="w-[40px] text-center">5</span>
-                        <span className="w-[35px] h-[35px] bg-[#F2F2F2] rounded-full flex justify-center items-center">
+                        <span className="w-[35px] cursor-pointer h-[35px] bg-[#F2F2F2] rounded-full flex justify-center items-center">
                           <FaPlus />
                         </span>
                       </div>

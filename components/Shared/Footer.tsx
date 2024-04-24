@@ -27,38 +27,54 @@ const Footer = () => {
           </div>
           <div className="p-2 col-span-3 lg:col-span-1 md:col-start-5 lg:col-start-4 xl:col-start-3 lg:-ml-10 xl:ml-0">
             <h2 className="text-xl font-medium text-[#FFFFFF]">My Account</h2>
-            <p className="text-sm font-normal text-[#808080] my-4">
+            <p className="text-sm font-normal text-[#808080] my-4  hover:text-white  cursor-pointer ">
               Order History
             </p>
-            <p className="text-sm font-normal text-[#808080] my-4">
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
               My Account
             </p>
-            <div className="text-white text-sm font-normal ">Shoping Cart</div>
-            <p className="text-sm font-normal text-[#808080] my-4">Wishlist</p>
-            <p className="text-sm font-normal text-[#808080] my-4">Settings</p>
+            <div className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Shoping Cart
+            </div>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Wishlist
+            </p>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Settings
+            </p>
           </div>
           <div className="p-2 md:pl-5 col-span-3 lg:col-start-5 xl:col-start-4 xl:col-span-1 lg:ml-5">
-            <h2 className="text-xl font-medium text-[#FFFFFF]">Helps</h2>
-            <p className="text-sm font-normal text-[#808080] my-4">Contact</p>
-            <p className="text-sm font-normal text-[#808080] my-4">Faqs</p>
+            <h2 className="text-xl font-medium text-[#FFFFFF] ">Helps</h2>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Contact
+            </p>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Faqs
+            </p>
 
-            <p className="text-sm font-normal text-[#808080] my-4">
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
               Terms & Condition
             </p>
-            <p className="text-sm font-normal text-[#808080] my-4">
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
               Privacy Policy
             </p>
           </div>
           <div className="p-2 max-w-[150px] xl:max-w-full col-span-2 lg:col-span-1 md:col-start-5 lg:col-start-1 xl:col-start-5">
             <h2 className="text-xl font-medium text-[#FFFFFF]">Proxy</h2>
-            <p className="text-sm font-normal text-[#808080] my-4">About</p>
-            <p className="text-sm font-normal text-[#808080] my-4">Shop</p>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              About
+            </p>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Shop
+            </p>
 
-            <p className="text-sm font-normal text-[#808080] my-4">Product</p>
-            <p className="text-sm font-normal text-[#808080] my-4">
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
+              Product
+            </p>
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
               Products Details
             </p>
-            <p className="text-sm font-normal text-[#808080] my-4">
+            <p className="text-sm font-normal text-[#808080] my-4 hover:text-white cursor-pointer ">
               Track Order
             </p>
           </div>

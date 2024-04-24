@@ -29,15 +29,15 @@ const HeroSlider = () => {
             }}
           >
             <CarouselContent>
-              <CarouselItem className="">
+              <CarouselItem className="relative rounded-lg overflow-hidden">
                 <Image
                   src="https://images.pexels.com/photos/2122278/pexels-photo-2122278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Food Image"
                   width={1000}
                   height={650}
-                  className="w-full rounded-lg overflow-hidden relative"
+                  className=" w-full rounded-lg overflow-hidden relative"
                 />
-                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden">
+                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden ">
                   <div className="mr-4">
                     <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
                       Fresh & Healthy Organic Food
@@ -74,9 +74,9 @@ const HeroSlider = () => {
                   alt="Food Image"
                   width={1000}
                   height={650}
-                  className="w-full rounded-lg overflow-hidden relative"
+                  className=" w-full rounded-lg overflow-hidden relative"
                 />
-                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden">
+                <div className="ml-4 flex flex-col justify-end pb-6 md:w-[90%] h-full md:h-auto w-[100%] pt-auto  md:pt-0 absolute font-semibold text-2xl md:text-[20px] left-0 bottom-0 md:bottom-6  md:left-12 bg-gradient-to-t from-[#222831]/70 md:to-white/50 rounded-lg md:p-5 overflow-hidden ">
                   <div className="mr-4">
                     <h2 className="md:text-5xl text-xl md:text-start text-center mb-auto md:mb-0 md:leading-[56px] font-semibold text-white">
                       Exploring the World of Organic

@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import Product from "./Product";
 import { Products as products } from "@/Constant";
+import Link from "next/link";
 
 const Products = () => {
   return (
@@ -12,9 +13,8 @@ const Products = () => {
           <p className="text-[#1A1A1A] text-[24px] md:text-[32px] font-semibold">
             Popular Products
           </p>
-          <Button
-            type="button"
-            variant="link"
+          <Link
+            href={`/products`}
             className="flex gap-2 text-xs font-medium text-[#00B207]"
           >
             View All{" "}
@@ -24,7 +24,7 @@ const Products = () => {
               width={12}
               height={12}
             />
-          </Button>
+          </Link>
         </div>
         <div className="grid p-6 place-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10">
           {products.map((item) => (

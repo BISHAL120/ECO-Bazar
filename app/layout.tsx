@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Header from "@/components/Shared/Header";
 import Footer from "@/components/Shared/Footer";
 
 const fontSans = FontSans({
@@ -28,6 +29,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Header />
         {children}
         <Footer />
       </body>
