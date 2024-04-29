@@ -132,7 +132,7 @@ const Header = () => {
                               </p>
                             </div>
                           </div>
-                          <div>
+                          <div className="cursor-pointer">
                             <MdAddShoppingCart size={25} />
                           </div>
                         </div>
@@ -154,14 +154,14 @@ const Header = () => {
                                 <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
                                   1 kg
                                 </span>{" "}
-                                x{" "}
+                                /{" "}
                                 <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
                                   12.00
                                 </span>
                               </p>
                             </div>
                           </div>
-                          <div>
+                          <div className="cursor-pointer">
                             <MdAddShoppingCart size={25} />
                           </div>
                         </div>
@@ -183,14 +183,14 @@ const Header = () => {
                                 <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
                                   1 kg
                                 </span>{" "}
-                                x{" "}
+                                /{" "}
                                 <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
                                   12.00
                                 </span>
                               </p>
                             </div>
                           </div>
-                          <div>
+                          <div className="cursor-pointer">
                             <MdAddShoppingCart size={25} />
                           </div>
                         </div>
@@ -212,14 +212,14 @@ const Header = () => {
                                 <span className="text-[14px] font-normal leading-[21px] text-[#808080]">
                                   1 kg
                                 </span>{" "}
-                                x{" "}
+                                /{" "}
                                 <span className="text-[#1A1A1A] text-[14px] font-semibold leading-[16.8px]">
                                   12.00
                                 </span>
                               </p>
                             </div>
                           </div>
-                          <div>
+                          <div className="cursor-pointer">
                             <MdAddShoppingCart size={25} />
                           </div>
                         </div>
@@ -232,15 +232,14 @@ const Header = () => {
                           <p>$48.00</p>
                         </div>
                         <div className="mb-4">
-                          <Button
-                            size={"big"}
-                            className="py-4 px-10  w-full rounded-[43px] mb-2"
-                          >
-                            Go to Wishlist
-                          </Button>
-                          {/* <button className="py-4 text-[#00B207] px-10 bg-[#56AC591A] w-full rounded-[43px]">
-                            Checkout
-                          </button> */}
+                          <SheetClose asChild>
+                            <Link
+                              className=" w-full rounded-[43px] mb-2 bg-[#333333] py-4 px-10 text-white text-center text-base font-semibold"
+                              href="/wishlist"
+                            >
+                              Go to Wishlist
+                            </Link>
+                          </SheetClose>
                         </div>
                       </div>
                     </div>
@@ -406,12 +405,22 @@ const Header = () => {
                           <p>$48.00</p>
                         </div>
                         <div className="mb-4">
-                          <button className="py-4 text-white px-10 bg-[#00B207] w-full rounded-[43px] mb-2">
-                            Checkout
-                          </button>
-                          <button className="py-4 text-[#00B207] px-10 bg-[#56AC591A] w-full rounded-[43px]">
-                            Go To Cart
-                          </button>
+                          <SheetClose asChild>
+                            <Link
+                              className="py-4 text-white px-10 text-center bg-[#00B207] text-base font-semibold w-full rounded-[43px] mb-2"
+                              href="/checkout"
+                            >
+                              Checkout
+                            </Link>
+                          </SheetClose>
+                          <SheetClose asChild>
+                            <Link
+                              className="py-4 text-[#00B207] px-10 text-center bg-[#56AC591A] text-base font-semibold w-full rounded-[43px] mb-2"
+                              href="/cart"
+                            >
+                              Go To Cart
+                            </Link>
+                          </SheetClose>
                         </div>
                       </div>
                     </div>
