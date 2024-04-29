@@ -69,7 +69,7 @@ const Footer = () => {
                   <a href={`tel: +8801623939834`}>+8801623939834</a>
                 </span>
                 <span className="text-[#808080] text-base font-normal">or</span>
-                <span className="text-white text-sm font-medium hover:border-b-[1.5px] border-[#20B526] pb-[2px]">
+                <span className="text-white text-sm font-medium hover:border-b-[1.5px] border-[#20B526] pb-[2px] text-ellipsis overflow-hidden">
                   <a href={`mailto:monerulmd5@gmail.com`}>
                     monerulmd5@gmail.com
                   </a>

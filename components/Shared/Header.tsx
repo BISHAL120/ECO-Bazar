@@ -407,7 +407,7 @@ const Header = () => {
                         <div className="mb-4">
                           <SheetClose asChild>
                             <Link
-                              className="py-4 text-white px-10 text-center bg-[#00B207] text-base font-semibold w-full rounded-[43px] mb-2"
+                              className="py-4 text-white px-10 text-center hover:bg-[#2C742F] transition duration-300 bg-[#00B207] text-base font-semibold w-full rounded-[43px] mb-2"
                               href="/checkout"
                             >
                               Checkout
@@ -415,7 +415,7 @@ const Header = () => {
                           </SheetClose>
                           <SheetClose asChild>
                             <Link
-                              className="py-4 text-[#00B207] px-10 text-center bg-[#56AC591A] text-base font-semibold w-full rounded-[43px] mb-2"
+                              className="py-4 text-[#00B207] hover:text-[#2C742F] hover:bg-[#2C742F]/20 transition duration-200 px-10 text-center bg-[#00B207]/10 text-base font-semibold w-full rounded-[43px] mb-2"
                               href="/cart"
                             >
                               Go To Cart
