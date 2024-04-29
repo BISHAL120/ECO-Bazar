@@ -12,7 +12,7 @@ const Breadcrumb = ({ routes }: { routes: string }) => {
           style={{
             backgroundImage: "url('/assets/Images/Banner/Breadcrumbs.png')",
           }}
-          className="relative"
+          className="relative pl-2"
         >
           <div className="py-[40px] max-w-[1380px] mx-auto text-white flex justify-start gap-2 items-center">
             <Link href="/">

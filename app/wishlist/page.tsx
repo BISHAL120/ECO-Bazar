@@ -31,14 +31,13 @@ const Wishlist = () => {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="hidden w-[100px] sm:table-cell">
-                    <span className="">Name</span>
+                  <TableHead className="md:w-[160px] sm:table-cell">
+                    <span className="">Image</span>
                   </TableHead>
-                  <TableHead className="sr-only">Name</TableHead>
+                  <TableHead className="hidden sm:table-cell ">Name</TableHead>
                   <TableHead className="hidden md:table-cell">Price</TableHead>
                   <TableHead>Stock Status</TableHead>
                   <TableHead className="">Add to Cart</TableHead>
-                  <TableHead className="">Remove</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -53,26 +52,41 @@ const Wishlist = () => {
                     />
                   </TableCell>
                   <TableCell className="font-medium">
-                    Fresh Indian Orange
+                    <div className="sm:hidden">
+                      <Image
+                        alt="Product image"
+                        className="aspect-square rounded-md object-cover"
+                        height="64"
+                        src="/assets/Images/Products/Image.png"
+                        width="64"
+                      />
+                    </div>
+                    <div className="md:hidden text-[16px] font-semibold text-[#1A1A1A]">
+                      $45.00
+                    </div>
+                    <div className="text-[14px] font-medium text-[#1A1A1A]">
+                      Fresh Indian Orange
+                    </div>
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
                     $499.99
                   </TableCell>
                   <TableCell>
                     <Badge variant="outline" className="bg-[#EA4B48]/85">
-                      Out of Stock
+                      Stock Out
                     </Badge>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell">
-                    <Button
-                      disabled
-                      className="p-5 disabled:bg-[#F2F2F2] disabled:text-[#B3B3B3] text-white  text-center bg-[#00B207] text-[14px] font-semibold rounded-[43px]"
-                    >
-                      Add To Cart
-                    </Button>
-                  </TableCell>
-                  <TableCell className="cursor-pointer">
-                    <CiCircleRemove size={26} />
+                  <TableCell className=" md:table-cell">
+                    {
+                      <>
+                        {/* <Button className="p-3 disabled:bg-[#F2F2F2] disabled:text-[#B3B3B3] text-white  text-center bg-[#00B207] text-[12px] font-semibold rounded-[43px]">
+                          Add To Cart
+                        </Button> */}
+                        <Button className="-mr-1 p-3 bg-[#e6dada] text-[#535252] hover:text-white text-center text-[12px] font-semibold rounded-[43px]">
+                          Remove
+                        </Button>
+                      </>
+                    }
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -86,7 +100,19 @@ const Wishlist = () => {
                     />
                   </TableCell>
                   <TableCell className="font-medium">
-                    Fresh Indian Orange
+                    <div className="sm:hidden">
+                      <Image
+                        alt="Product image"
+                        className="aspect-square rounded-md object-cover"
+                        height="64"
+                        src="/assets/Images/Products/Image (1).png"
+                        width="64"
+                      />
+                    </div>
+                    <div className="md:hidden text-[16px] font-semibold text-[#1A1A1A]">
+                      $45.00
+                    </div>
+                    <div>Fresh Indian Orange</div>
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
                     $129.99
@@ -96,13 +122,20 @@ const Wishlist = () => {
                       In Stock
                     </Badge>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell">
-                    <Button className="p-5 disabled:bg-[#F2F2F2] disabled:text-[#B3B3B3] text-white  text-center bg-[#00B207] text-[14px] font-semibold rounded-[43px]">
-                      Add To Cart
-                    </Button>
-                  </TableCell>
-                  <TableCell className="cursor-pointer">
-                    <CiCircleRemove size={26} />
+                  <TableCell className=" md:table-cell">
+                    {
+                      <>
+                        <Button className="p-3  text-white  text-center bg-[#00B207] text-[12px] font-semibold rounded-[43px]">
+                          Add To Cart
+                        </Button>
+                        {/* <Button
+                          disabled
+                          className="p-3 disabled:bg-[#e6dada] disabled:text-[#535252] text-white  text-center bg-[#00B207] text-[12px] font-semibold rounded-[43px]"
+                        >
+                          Add To Cart
+                        </Button> */}
+                      </>
+                    }
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -116,7 +149,19 @@ const Wishlist = () => {
                     />
                   </TableCell>
                   <TableCell className="font-medium">
-                    Fresh Indian Orange
+                    <div className="sm:hidden">
+                      <Image
+                        alt="Product image"
+                        className="aspect-square rounded-md object-cover"
+                        height="64"
+                        src="/assets/Images/Products/Image (2).png"
+                        width="64"
+                      />
+                    </div>
+                    <div className="md:hidden text-[16px] font-semibold text-[#1A1A1A]">
+                      $45.00
+                    </div>
+                    <div>Fresh Indian Orange</div>
                   </TableCell>
 
                   <TableCell className="hidden md:table-cell">
@@ -124,19 +169,20 @@ const Wishlist = () => {
                   </TableCell>
                   <TableCell>
                     <Badge variant="outline" className="bg-[#EA4B48]/85">
-                      Out of Stock
+                      Stock Out
                     </Badge>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell">
-                    <Button
-                      disabled
-                      className="p-5 disabled:bg-[#F2F2F2] disabled:text-[#B3B3B3] text-white  text-center bg-[#00B207] text-[14px] font-semibold rounded-[43px]"
-                    >
-                      Add To Cart
-                    </Button>
-                  </TableCell>
-                  <TableCell className="cursor-pointer">
-                    <CiCircleRemove size={26} />
+                  <TableCell className=" md:table-cell">
+                    {
+                      <>
+                        {/* <Button className="p-3 disabled:bg-[#F2F2F2] disabled:text-[#B3B3B3] text-white  text-center bg-[#00B207] text-[12px] font-semibold rounded-[43px]">
+                          Add To Cart
+                        </Button> */}
+                        <Button className="p-3 bg-[#e6dada] text-[#535252] hover:text-white text-center text-[12px] font-semibold rounded-[43px]">
+                          Remove
+                        </Button>
+                      </>
+                    }
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -150,7 +196,19 @@ const Wishlist = () => {
                     />
                   </TableCell>
                   <TableCell className="font-medium">
-                    Fresh Indian Orange
+                    <div className="sm:hidden">
+                      <Image
+                        alt="Product image"
+                        className="aspect-square rounded-md object-cover"
+                        height="64"
+                        src="/assets/Images/Products/Image (3).png"
+                        width="64"
+                      />
+                    </div>
+                    <div className="md:hidden text-[16px] font-semibold text-[#1A1A1A]">
+                      $45.00
+                    </div>
+                    <div>Fresh Indian Orange</div>
                   </TableCell>
                   <TableCell className="hidden md:table-cell">
                     $129.99
@@ -160,13 +218,20 @@ const Wishlist = () => {
                       In Stock
                     </Badge>
                   </TableCell>
-                  <TableCell className="hidden md:table-cell">
-                    <Button className="p-5 disabled:bg-[#F2F2F2] disabled:text-[#B3B3B3] text-white  text-center bg-[#00B207] text-[14px] font-semibold rounded-[43px]">
-                      Add To Cart
-                    </Button>
-                  </TableCell>
-                  <TableCell className="cursor-pointer">
-                    <CiCircleRemove size={26} />
+                  <TableCell className=" md:table-cell">
+                    {
+                      <>
+                        <Button className="p-3 text-white  text-center bg-[#00B207] text-[12px] font-semibold rounded-[43px]">
+                          Add To Cart
+                        </Button>
+                        {/* <Button
+                            disabled
+                            className="p-3 disabled:bg-[#e6dada] disabled:text-[#535252] text-white  text-center bg-[#00B207] text-[12px] font-semibold rounded-[43px]"
+                          >
+                            Add To Cart
+                          </Button> */}
+                      </>
+                    }
                   </TableCell>
                 </TableRow>
               </TableBody>
