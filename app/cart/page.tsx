@@ -260,7 +260,7 @@ const Wishlist = () => {
                       placeholder="Enter Code"
                       type="email"
                     />
-                    <button className=" absolute top-0 right-0 bg-[#00B207] py-2 md:py-[14px] px-5 sm:px-10  text-[#FFFFFF] text-[12px] sm:text-[16px] font-medium sm:font-semibold">
+                    <button className=" absolute top-0 right-0 bg-[#333333] hover:bg-[#0a0909] py-2 md:py-[14px] px-5 sm:px-10  text-[#FFFFFF] text-[12px] sm:text-[16px] font-medium sm:font-semibold">
                       Apply Coupon
                     </button>
                   </div>

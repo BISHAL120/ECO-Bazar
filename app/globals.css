@@ -85,3 +85,23 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.Bodyy {
+  @apply flex items-center justify-center min-h-[50vh];
+}
+
+.wrap {
+  @apply flex items-center justify-center;
+}
+
+.loading {
+  @apply flex items-center;
+}
+
+.text {
+  @apply text-[#00B207] text-2xl font-semibold ml-5;
+}
+
+.bounceball {
+  @apply w-10 h-10 rounded-full bg-[#00B207] animate-ping; /* Tailwind animation */
+}

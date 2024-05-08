@@ -35,19 +35,19 @@ const Footer = () => {
                 placeholder="Your email address"
                 type="email"
               />
-              <button className="-ml-[100px] bg-[#00B207] py-2 md:py-[14px] px-5 sm:px-10 rounded-[46px] text-[#FFFFFF] text-[12px] sm:text-base font-medium sm:font-semibold">
+              <button className="-ml-[100px] bg-[#00B207] hover:bg-[#2C742F] transition duration-200 py-2 md:py-[14px] px-5 sm:px-10 rounded-[46px] text-[#FFFFFF] text-[12px] sm:text-base font-medium sm:font-semibold">
                 Subscribe
               </button>
             </div>
           </div>
           <div className="lg:h-10 flex gap-4 sm:mt-0 sm:justify-center items-center mt-3 md:-ml-12 lg:col-end-7 lg:-mb-5 lg:mt-2 xl:mt-0 md:mt-3">
-            <div className="w-7 sm:w-10 h-7 sm:h-10 border-[#808080] border rounded-full cursor-pointer p-2 group flex justify-center items-center hover:bg-[#00B207]">
+            <div className="w-7 sm:w-10 h-7 sm:h-10 border-[#808080] border rounded-full cursor-pointer p-2 group flex justify-center items-center hover:bg-[#00B207] hover:border-none">
               <FaFacebookF size={20} className="group-hover:text-white" />
             </div>
-            <div className="w-7 sm:w-10 h-7 sm:h-10 border-[#808080] border rounded-full cursor-pointer p-2 group flex justify-center items-center hover:bg-[#00B207]">
+            <div className="w-7 sm:w-10 h-7 sm:h-10 border-[#808080] border rounded-full cursor-pointer p-2 group flex justify-center items-center hover:bg-[#00B207] hover:border-none">
               <FaXTwitter size={20} className="group-hover:text-white" />
             </div>
-            <div className="w-7 sm:w-10 h-7 sm:h-10 border-[#808080] border rounded-full cursor-pointer p-2 group flex justify-center items-center hover:bg-[#00B207]">
+            <div className="w-7 sm:w-10 h-7 sm:h-10 border-[#808080] border rounded-full cursor-pointer p-2 group flex justify-center items-center hover:bg-[#00B207] hover:border-none">
               <FaInstagram size={20} className="group-hover:text-white" />
             </div>
           </div>

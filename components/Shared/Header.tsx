@@ -79,7 +79,7 @@ const Header = () => {
                   className="absolute top-[8px] left-[6px] mt-3 ml-3 text-gray-500"
                 />
               </div>
-              <button className="bg-[#00B207] text-white px-[24px] py-[12px] border0 rounded-s-none rounded-e-md ">
+              <button className="bg-[#00B207] hover:bg-[#2C742F] transition  text-white px-[24px] py-[12px] border0 rounded-s-none rounded-e-md ">
                 Search
               </button>
             </div>
